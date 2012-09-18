@@ -18,10 +18,7 @@ export PORT_OFFSET=100
 export JBOSS_USER=jjeon
 
 ##### Bind Address #####
-#export BIND_ADDR=127.0.0.1
-#export BIND_ADDR=10.64.160.197
 export BIND_ADDR=0.0.0.0
-#export BIND_ADDR=192.168.0.10
 
 export MULTICAST_ADDR=230.1.0.1
 export JMS_MULTICAST_ADDR=231.7.0.1

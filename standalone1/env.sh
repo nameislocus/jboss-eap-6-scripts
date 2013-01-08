@@ -74,6 +74,9 @@ export JAVA_OPTS=" $JAVA_OPTS -Djboss.modcluster.multicast.address=$MODCLUSTER_M
 
 export JAVA_OPTS=" $JAVA_OPTS -Dserver.mode=local"
 
+# Use log4j in application
+export JAVA_OPTS=" $JAVA_OPTS -Dorg.jboss.as.logging.per-deployment=false "
+
 echo "================================================"
 echo "JBOSS_HOME=$JBOSS_HOME"
 echo "DOMAIN_BASE=$DOMAIN_BASE"

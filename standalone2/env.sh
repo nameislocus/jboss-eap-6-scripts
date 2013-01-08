@@ -73,6 +73,9 @@ export JAVA_OPTS=" $JAVA_OPTS -Djboss.messaging.group.address=$JMS_MULTICAST_ADD
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.modcluster.multicast.address=$MODCLUSTER_MULTICAST_ADDR"
 #export JAVA_OPTS=" $JAVA_OPTS -Djboss.default.jgroups.stack=tcp"
 
+# Use log4j in application
+export JAVA_OPTS=" $JAVA_OPTS -Dorg.jboss.as.logging.per-deployment=false "
+
 echo "================================================"
 echo "JBOSS_HOME=$JBOSS_HOME"
 echo "DOMAIN_BASE=$DOMAIN_BASE"

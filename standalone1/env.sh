@@ -61,6 +61,9 @@ export JAVA_OPTS=" $JAVA_OPTS -Dsun.rmi.dgc.server.gcInterval=3600000"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.modules.system.pkgs=org.jboss.byteman"
 export JAVA_OPTS=" $JAVA_OPTS -Djava.awt.headless=true"
 
+#for darwin
+export JBOSS_BASE_DIR="$DOMAIN_BASE/$SERVER_HOME"
+
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.server.base.dir=$DOMAIN_BASE/$SERVER_NAME"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.socket.binding.port-offset=$PORT_OFFSET"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.node.name=$NODE_NAME"

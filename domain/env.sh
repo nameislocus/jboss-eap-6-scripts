@@ -64,6 +64,10 @@ export JAVA_OPTS=" $JAVA_OPTS -Djava.awt.headless=true"
 
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.domain.default.config=$DOMAIN_CONFIG_FILE"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.host.default.config=$HOST_CONFIG_FILE"
+
+#for darwin
+export JBOSS_BASE_DIR="$DOMAIN_BASE_DIR"
+
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.domain.base.dir=$DOMAIN_BASE_DIR"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.domain.master.address=$DOMAIN_MASTER_ADDR"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.domain.master.port=$DOMAIN_MASTER_PORT"

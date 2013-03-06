@@ -62,6 +62,9 @@ export JAVA_OPTS=" $JAVA_OPTS -Djava.awt.headless=true"
 
 #export JAVA_OPTS=" $JAVA_OPTS -Dignore.bind.address=true"
 
+#for darwin
+export JBOSS_BASE_DIR="$DOMAIN_BASE/$SERVER_HOME"
+
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.server.base.dir=$DOMAIN_BASE/$SERVER_NAME"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.socket.binding.port-offset=$PORT_OFFSET"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.node.name=$NODE_NAME"

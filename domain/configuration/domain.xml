@@ -1094,7 +1094,7 @@
                 <hornetq-server>
                     <clustered>true</clustered>
                     <persistence-enabled>true</persistence-enabled>
-                    <cluster-password>qwer0987</cluster-password>
+                    <cluster-password>redhat</cluster-password>
                     <shared-store>true</shared-store>
                     <journal-file-size>102400</journal-file-size>
                     <journal-min-files>2</journal-min-files>

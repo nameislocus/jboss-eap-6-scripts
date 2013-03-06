@@ -16,7 +16,7 @@ export HOST_CONFIG_FILE=host-slave2.xml
 export HOST_NAME=slave2
 export NODE_NAME=$SERVER_NAME
 
-export JBOSS_USER=jjeon
+export JBOSS_USER=jboss
 
 ##### Bind Address #####
 export BIND_ADDR=0.0.0.0

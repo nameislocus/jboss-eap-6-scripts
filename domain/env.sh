@@ -16,7 +16,7 @@ export HOST_CONFIG_FILE=host-master.xml
 export HOST_NAME=master
 export NODE_NAME=$SERVER_NAME
 
-export JBOSS_USER=jjeon
+export JBOSS_USER=jboss
 
 ##### Bind Address #####
 export BIND_ADDR=0.0.0.0

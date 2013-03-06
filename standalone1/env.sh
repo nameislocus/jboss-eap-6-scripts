@@ -16,7 +16,7 @@ export HOST_NAME=master
 export NODE_NAME=$SERVER_NAME
 export PORT_OFFSET=0
 
-export JBOSS_USER=jjeon
+export JBOSS_USER=jboss
 
 ##### Bind Address #####
 export BIND_ADDR=0.0.0.0

@@ -453,7 +453,7 @@
             <recovery-environment socket-binding="txn-recovery-environment" status-socket-binding="txn-status-manager"/>
             <coordinator-environment default-timeout="300"/>
         </subsystem>
-        <subsystem xmlns="urn:jboss:domain:web:1.1" default-virtual-server="default-host" native="false">
+        <subsystem xmlns="urn:jboss:domain:web:1.1" default-virtual-server="default-host" instance-id="${jboss.node.name}" native="false">
             <connector name="http" protocol="HTTP/1.1" scheme="http" socket-binding="http"/>
             <connector name="ajp" protocol="AJP/1.3" scheme="http" socket-binding="ajp"/>
             <virtual-server name="default-host" enable-welcome-root="true">

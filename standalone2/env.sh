@@ -6,7 +6,7 @@ DATE=`date +%Y%m%d%H%M%S`
 export JBOSS_HOME=/home/jjeon/jboss/eap/jboss-eap-6.0
 export DOMAIN_BASE=/home/jjeon/jboss/eap/domains.600
 export SERVER_NAME=standalone2
-export JBOSS_LOG_DIR=/logs/was/standalone1
+export JBOSS_LOG_DIR=/logs/was/standalone2
 
 if [ e$JBOSS_LOG_DIR = "e" ]
 then

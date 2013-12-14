@@ -6,11 +6,24 @@ DATE=`date +%Y%m%d%H%M%S`
 export JBOSS_HOME=/home/jjeon/jboss/eap/jboss-eap-6.0
 export DOMAIN_BASE=/home/jjeon/jboss/eap/domains.600
 export SERVER_NAME=standalone1
+export JBOSS_LOG_DIR=/logs/was/standalone1
+
+if [ e$JBOSS_LOG_DIR = "e" ] 
+then 
+    export JBOSS_LOG_DIR="$JBOSS_HOME/log"
+fi 
+
+if [ e$JBOSS_LOG_DIR != "e" ] 
+then 
+    export JBOSS_LOG_DIR="$JBOSS_LOG_DIR" 
+fi
 
 
 ##### Configration File #####
 #export CONFIG_FILE=standalone-full-ha.xml
 export CONFIG_FILE=standalone-ha.xml
+
+export EXTERNAL_DEPLOYMENT=/svc/test/was/domains/applications
 
 export HOST_NAME=master
 export NODE_NAME=$SERVER_NAME
@@ -65,6 +78,8 @@ export JAVA_OPTS=" $JAVA_OPTS -Djava.awt.headless=true"
 export JBOSS_BASE_DIR="$DOMAIN_BASE/$SERVER_HOME"
 
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.server.base.dir=$DOMAIN_BASE/$SERVER_NAME"
+export JAVA_OPTS=" $JAVA_OPTS -Djboss.server.log.dir=$JBOSS_LOG_DIR"
+export JAVA_OPTS=" $JAVA_OPTS -Djboss.external.deployments=$EXTERNAL_DEPLOYMENT"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.socket.binding.port-offset=$PORT_OFFSET"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.node.name=$NODE_NAME"
 export JAVA_OPTS=" $JAVA_OPTS -Djboss.bind.address.management=$MGMT_ADDR"
